@@ -43,7 +43,7 @@ public class ItemService {
 	@FormParam("itemDesc") String itemDesc)
 	{
 	String output = itemObj.insertItem(itemCode, itemName, itemPrice, itemDesc);
-	return output;//edit
+	return output;
 	
 
 	}
