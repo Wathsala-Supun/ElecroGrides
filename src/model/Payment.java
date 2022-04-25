@@ -8,5 +8,24 @@ public class Payment {
 	private static String password = " ";
 	
 	
+	public Connection connect()
+	{
+	Connection con = null;
+	
+	try
+	{
+	  Class.forName("com.mysql.jdbc.Driver");
+	  con= DriverManager.getConnection(url,userName,password);
+	  //For testing
+	  System.out.print("Successfully connected");
+	}
+	catch(Exception e)
+	{
+		System.out.println("Database connection is not success!!!");
+	}
+	
+	return con;
+	}
+	
 
 }
