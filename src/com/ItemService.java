@@ -13,7 +13,7 @@ import org.jsoup.nodes.Document;
 
 @Path("/Items")
 public class ItemService {
-	
+	//inquiry
 	item itemObj = new item();
 	/*@GET
 	@Path("/")
